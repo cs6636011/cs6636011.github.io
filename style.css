@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+}
+.menu_bar {
+    background-color: black;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu_bar ul{
+    list-style: none;
+    display: flex;
+}
+
+.menu_bar ul li {
+    padding-inline: 30px;
+    padding-right: 20px;
+    
+    position: relative;
+}
+
+.menu_bar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.menu_bar ul li a:hover {
+    color: rgb(255, 217, 0);
+}
+
+.dropdown_menu {
+    display: none;
+}
+
+
+.menu_bar ul li:hover .dropdown_menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: black;
+}
+.menu_bar ul li:hover .dropdown_menu ul {
+    display: block;
+    margin: 0px;
+}
+
+.menu_bar ul li:hover .dropdown_menu ul li {
+    width: 150px;
+    padding: 20px;
+}
+
+.icon {
+    font-size: small;
+    float: right;
+    margin-left: 10px;
+    
+}
+.dd_lab1no5 {
+    display: none;
+}
+
+.dropdown_menu ul li:hover .dd_lab1no5 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 150px;
+    background-color: rgb(48, 48, 48);
+}
+
+.dropdown_menu .icon:hover {
+    transform: rotate(270deg);
+}
+
+.dd_lab1no5_A {
+    display: none;
+}
+
+.dd_lab1no5 ul li:hover .dd_lab1no5_A {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 150px;
+    background-color: rgb(63, 63, 63);
+}
